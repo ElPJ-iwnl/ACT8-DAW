@@ -1,0 +1,15 @@
+<div class="row text-center">
+  <div class="col-lg-4" *ngFor="let c of cards">
+    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+         preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" text-anchor="middle">140x140</text>
+    </svg>
+
+    <h2 class="fw-normal mt-3">{{ c.title }}</h2>
+    <p>{{ c.text }}</p>
+    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+  </div>
+</div>
