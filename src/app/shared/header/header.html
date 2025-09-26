@@ -11,9 +11,16 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+          <li class="nav-item" *ngFor="let l of navLinks">
+            <a class="nav-link"
+               [class.active]="l.active"
+               [class.disabled]="l.disabled"
+               [attr.aria-current]="l.active ? 'page' : null"
+               [attr.aria-disabled]="l.disabled ? 'true' : null"
+               [href]="l.href">
+              {{ l.label }}
+            </a>
+          </li>
         </ul>
 
         <form role="search" class="d-flex" (submit)="$event.preventDefault()">

@@ -12,11 +12,11 @@ export class FeaturettesComponent {
   featurettes = [
     {
       title: 'First featurette heading.',
-      highlight: 'It’ll blow your mind.',
+      highlight: 'It ll blow your mind.',
       text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.'
     },
     {
-      title: 'Oh yeah, it’s that good.',
+      title: 'Oh yeah, its that good.',
       highlight: 'See for yourself.',
       text: 'Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.',
       reverse: true

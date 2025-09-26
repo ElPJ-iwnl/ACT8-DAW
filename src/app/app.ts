@@ -8,10 +8,7 @@ import { FeaturettesComponent } from './features/featurettes/featurettes';
   selector: 'app-root',
   standalone: true,
   imports: [
-    HeaderComponent,
-    HeroCarouselComponent,
-    MarketingComponent,
-    FeaturettesComponent
+    HeaderComponent, HeroCarouselComponent, MarketingComponent, FeaturettesComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
